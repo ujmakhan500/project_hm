@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Shopping Bag</title>
+
+    <style>
+
+*{
+   
+    font-family: 'poppins';
+    box-sizing: border-box;
+}
+
+
+.shopping-bag {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.shopping-bag h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.shopping-bag-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.shopping-bag-items, .shopping-bag-summary {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.shopping-bag-items {
+    flex: 3;
+}
+
+.shopping-bag-summary {
+    flex: 1;
+}
+
+.shopping-bag-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.shopping-bag-item img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.item-price {
+    color: #555;
+    margin: 10px 0;
+}
+
+.item-info p {
+    margin: 5px 0;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.item-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.wishlist-button, .remove-button {
+    background: none;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.quantity-selector {
+    padding: 5px;
+}
+
+.shopping-bag-summary p{
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.summary-details p {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.checkout-button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.payment-methods {
+    margin: 20px 0;
+}
+
+.payment-methods p {
+    margin-bottom: 10px;
+}
+
+
+
+.policies p {
+    font-size: 12px;
+    color: #777;
+    margin: 10px 0;
+}
+
+.policies a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.delivery-options {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.delivery-options a {
+    color: #000;
+    text-decoration: underline;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="shopping-bag">
+        <h2>Shopping bag</h2>
+        <div class="shopping-bag-content">
+            <div class="shopping-bag-items">
+                <div class="shopping-bag-item">
+                    <img src="C:\Users\Admin\Desktop\project\project_hm\assets\hmgoepprod.jfif" alt="Linen T-shirt">
+                    <div class="item-details">
+                        <p class="item-title">Linen T-shirt</p>
+                        <p class="item-price">Rs.1,499.00</p>
+                        <div class="item-info">
+                            <p>Art.no: 1218625001<span>Size: M</span></p>
+                            <p>Colour: Black<span>Total: Rs.1,499.00</span></p>
+                           
+                        </div>
+                        <div class="item-actions">
+                            <button class="wishlist-button">♥</button>
+                            <select class="quantity-selector">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <button class="remove-button">🗑</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shopping-bag-summary">
+                <p>Discounts<span>Apply discount</span></p>
+                <div class="summary-details">
+                    <p>Order value: <span>Rs.1,499.00</span></p>
+                    <p>Delivery: <span>Rs.149.00</span></p>
+                    <p class="total">Total: <span>Rs.1,648.00</span></p>
+                </div>
+                <button class="checkout-button">Continue to checkout</button>
+                <div class="payment-methods">
+                    <p>We accept:</p>
+                  <img src="C:\Users\Admin\Desktop\project\project_hm\assets\Screenshot_30-5-2024_02752_www2.hm.com.jpeg">
+                  
+                </div>
+                <div class="policies">
+                    <p>Prices and delivery costs are not confirmed until you've reached the checkout.</p>
+                    <p>15 days free returns. Read more about <a href="#">return and refund policy</a>.</p>
+                    <p>Customers would receive an SMS/WhatsApp notifications regarding deliveries on the registered phone number.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

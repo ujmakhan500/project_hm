@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product page</title>
+    <style>
+        
+.new-arrivals {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.new-arrivals h2 {
+    margin-bottom: 20px;
+}
+
+.categories {
+    display: flex;
+    gap: 10px;
+    
+    margin-bottom: 20px;
+}
+
+.categories button {
+    padding: 10px 20px;
+    border: 1px solid;
+    font-weight: 600;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.categories button.active {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.products {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items:center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product .title {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.product .price {
+    color: #777;
+}
+
+    </style>
+</head>
+<div class="new-arrivals">
+    <h2>New Arrivals</h2>
+    <div class="categories">
+        <button class="active">Ladies</button>
+        <button>Men</button>
+        <button>Divided</button>
+        <button>Baby</button>
+        <button>Kids</button>
+        <button>H&M HOME</button>
+        <button>Sport</button>
+    </div>
+    <div class="products">
+        <div class="product">
+            <img src="C:\Users\Admin\Desktop\project\project_hm\assets\Screenshot_28-5-2024_1845_www2.hm.com.jpeg" alt="V-neck strappy body">
+            <p class="title">V-neck strappy body</p>
+            <p class="price">Rs.799.00</p>
+        </div>
+        <div class="product">
+            <img src="C:\Users\Admin\Desktop\project\project_hm\assets\Screenshot_28-5-2024_182352_www2.hm.com.jpeg" alt="Long strappy dress">
+            <p class="title">Long strappy dress</p>
+            <p class="price">Rs.2,299.00</p>
+        </div>
+        <div class="product">
+            <img src="C:\Users\Admin\Desktop\project\project_hm\assets\Screenshot_28-5-2024_182429_www2.hm.com.jpeg" alt="Tiered maxi dress">
+            <p class="title">Tiered maxi dress</p>
+            <p class="price">Rs.2,299.00</p>
+        </div>
+        <div class="product">
+            <img src="C:\Users\Admin\Desktop\project\project_hm\assets\Screenshot_28-5-2024_182457_www2.hm.com.jpeg" alt="Balloon-sleeved cotton dress">
+            <p class="title">Balloon-sleeved cotton dress</p>
+            <p class="price">Rs.2,699.00</p>
+        </div>
+    </div>
+<body>
+    
+</body>
+</html>
